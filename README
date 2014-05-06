@@ -1,0 +1,31 @@
+I've provided two scripts and a set of tests:
+
+==========================
+berlin_clock.py
+=========================
+
+Running this provides a berlin clock string representation of the current time
+every second. If you specify a time, it will print the berlin clock
+representation of that time then quit. The syntax is like this:
+
+./berlin_clock.py 23:12:12
+
+for example
+
+==========================
+berlin_clock_colours.py
+==========================
+
+This has the same functionality as the above script but gives a visual
+representation of the lights. It requires the module termcolor which is
+available via pip:
+
+pip install termcolor
+
+==========================
+test_berlin_clock.py
+==========================
+
+Some tests to check that everything works as expected. Run like this:
+
+python -m unittest -v test_berlin_clock
